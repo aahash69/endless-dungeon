@@ -56,7 +56,7 @@ function love.load()
           {floorTile, floorTile, floorTile , floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile},
           {floorTile, floorTile, floorTile , floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile},
           {floorTile, floorTile, floorTile , floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile, floorTile},
-          
+
 }
 
 wall = {
@@ -140,8 +140,11 @@ function love.draw()
 love.graphics.rectangle('line', 100, 300, 64, 64)
 love.graphics.rectangle('line', 200, 300, 64, 64)
 love.graphics.rectangle('line', 300, 300, 64, 64)
+love.graphics.rectangle('line', 450, 450, 64, 64)
 
-
+if x > 400 and x < 500 and y > 400 and y < 500 then
+love.exitModule()
+end
 
   end)
 
